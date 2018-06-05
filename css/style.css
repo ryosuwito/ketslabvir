@@ -22,6 +22,19 @@ input{
 tr{
 	border-bottom: 1px solid #fff;
 }
+.navbar-nav{
+	flex-direction: row;
+}
+.navbar-inverse{
+	background: #444;
+	color:#fff
+}
+.navbar .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar-header > a {
+	color: #fff;
+}
 .card-header{
 	text-align: left;
 }
