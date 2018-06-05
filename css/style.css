@@ -1,0 +1,171 @@
+body{
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+form{
+	background-color: #08125a;
+	margin-bottom: 40px;
+	box-shadow:0 15px #000527, 0 -15px #000527;
+}
+table{
+	font-size: 16px;
+}
+th{
+	font-weight: 100;
+}
+input{
+	max-width: 120px;
+}
+.table td, .table th{
+	border: none;
+}
+tr{
+	border-bottom: 1px solid #fff;
+}
+.card-header{
+	text-align: left;
+}
+.header-box{
+	width:100%; 
+	text-align:center; 
+	background:linear-gradient(#000527, #08125a);
+	box-shadow:0 -20px 0 -2px #08125a inset, 0 -120px 0 -2px #000527 inset,0 3px 16px rgba(0,0,0,0.48);
+	padding:20px 0;
+	color:#fff;
+}
+.simulations{
+	width: 100%; 
+	margin-top:20px;
+	padding: 40px 0 10px 0;
+	background-color:#08125a;
+	box-shadow:0 15px #000527, 0 -15px #000527;
+}
+.main-title, .sub-title{
+	font-family: 'Aladin', cursive;
+}
+.btn-success{
+	border:none;
+}
+.container{
+	font-size: 22px;
+	color: #fff;
+	margin-top: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+a:hover{
+    color:#fbd9a3;
+}
+a > li > .badge{
+	color: #f80;
+}
+ol > a{
+	color: #fff
+}
+ul > li{
+	padding-left: 15px;
+}
+ol > li:hover{
+	background-color: transparent;
+}
+.footer{
+	margin-top: 70px;
+	width: 100%;
+	min-height: 200px;
+	background-color:#7d3e70;
+	color:#fff;
+	font-family: 'Aladin', cursive;
+	box-shadow: 0 -30px 0 0 #c36eb2 inset, 0px -2px 12px rgba(0,0,0,0.48);
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    border-radius: 6px;
+    background: #c36eb2;
+	border-color: #fff;
+	margin: 20px 0;
+	box-shadow: 0px -14px 0px -4px #7d3e70 inset;
+    font-family: 'Aladin', cursive;
+}
+a > .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    border-radius: 50px;
+    background: #331423;
+	border-color: #fff;
+	margin: 20px 0;
+	box-shadow: 0px -14px 0px -4px #6b2848 inset;
+    font-family: 'Aladin', cursive;
+}
+p {
+	color: #222;
+}
+.list-group-item {
+	border: none;
+	background-color: transparent;
+}
+
+.hidden{
+	display: none;
+}
+.canvas {
+	position:absolute;
+	left:5px;
+	top:25px;
+	z-index:6;
+	pointer-events: none;
+}
+.card-body{
+	color: #444;
+}
+.display {
+   font-family: JuneBug;
+   color: #222;
+   font-size: 15pt;
+   display: none;
+   position:absolute;
+   top:247px;
+   z-index:5
+}
+.display-small {
+   font-size: 8pt;
+   top:232px;
+}
+.dot {
+	background-color: rgba(55,200,0,0.66);
+	display: block;
+	width: 12px; 
+	height: 12px; 
+	position: absolute; 
+	z-index: 4;
+}
+.indicator{
+	position: absolute;
+	z-index: 5; 
+	display: none; 
+	width:5px; 
+	height: 5px; 
+	border-radius: 
+	13px; 
+	background-color:#ff0000;
+}
+.probe{
+	width:12px;
+	height:auto;
+	z-index:6;
+	cursor: pointer;
+	position:absolute;
+}
+.resistor{
+	width:41px;
+	height:auto;
+	z-index:7; 
+	cursor: pointer;
+	position:absolute;
+}
+.btn-link{
+	color: #444;
+}
+.table-tegangan > tbody > tr > td > input{
+	width: 90px
+}

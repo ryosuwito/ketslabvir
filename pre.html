@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		
+	</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Aladin|Just+Another+Hand|Merienda+One|Pangolin|Sue+Ellen+Francisco" rel="stylesheet">
+
+    <style type="text/css">  	
+        @font-face { font-family: JuneBug; src: url('font/digital-italic.ttf'); } 
+    </style>
+</head>
+<body  style="background-color:#e6ac79;">	
+	
+	<div id="timer-box" class="hidden" style="position: fixed;z-index: 9000;top: 0px;right: 0px;padding: 15px;
+	background-color: rgb(18, 18, 17);border-radius: 80px;">
+		<h3 style="font-family: JuneBug;color: red;font-size: 200%;font-weight: bold;" id="time-counter"></h3></div>
+    <div class="header-box">
+		<div style="width:100%;height:auto; text-align: center; padding: 0; margin: 10px 0">
+			<h1 class="main-title">Laboratorium Virtual Fisika Listrik Dinamis</h1><br>
+			<h3 class="sub-title"><span>Sub Modul :</span><br>
+			Pengukuran Tegangan Listrik Arus Searah</h3>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" id="mainObjective">
+			<div class="hidden-md-down col-lg-1">
+
+			</div>
+            <div class="list-group col-lg-10" style="text-align: center;padding-right: 0">
+            	<h3 class="list-group-item active">Prosedur Pre Test :</h3>
+
+            	<!-- MASUKAN PROSEDUR Praktikum DISINI -->
+				<div class="accordion" id="accordionExample">
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link">
+				                1. Isilah pertanyaan di bawah ini dengan baik dan benar
+				                </button>
+				            </h5>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link">
+				                2. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
+				                </button>
+				            </h5>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link">
+				                9. Klik <b>Simpan Jawaban</b> untuk menyimpan data hasil praktikum
+				                </button>
+				            </h5>
+				        </div>
+				    </div>
+				</div>
+			<div class="hidden-md-down col-lg-1"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container" style="width:100%; max-width:none; padding:0">
+		<div class="row" id="mainForm">
+			<div class="list-group col-lg-12" style="text-align: left;padding-right: 0"> 
+	        	<form id="form-jawaban" style="padding: 40px">
+		        	<div>
+		        	    <table class="table" style="margin: 10px 0">
+		        	    	<tbody>
+		        	    	   	<tr style="border: 1px solid #fff">
+			        	    		<th>Nama : 
+			        	    		</th>
+				        	    	<td>Ni Ketut Rahayu
+				        	    	</td>
+			        	    		<th style="border-left: 1px solid #fff">NIM : 
+			        	    		</th>
+				        	    	<td>12345680
+				        	    	</td>	
+			        	    		<th style="border-left: 1px solid #fff">Fakultas : 
+			        	    		</th>
+				        	    	<td>FKIP
+				        	    	</td>	
+			        	    		<th style="border-left: 1px solid #fff">Jurusan :
+			        	    		</th>
+				        	    	<td>Pendidikan Fisika
+				        	    	</td>	        	
+			        	    	</tr>
+			        	    </tbody>
+			        	</table>
+			        	<table>
+			        		<tbody class="table" style="margin: 10px 0">
+			        			<tr>
+			        				<th>Soal</th>
+			        				<th>Jawaban</th>
+			        			</tr>
+			        	    	<tr>
+			        	    		<td style="min-width: 400px">1. Sebutkan bunyi hukum ohm!
+			        	    		</td>
+			        	    	    <td><input style="max-width: 600px; min-width: 400px" type="text" name="firstname"><br>
+			        	    	    </td>	
+			        	    	</tr>
+			        	    	<tr>
+			        	    		<td style="min-width: 400px">2. Apakah syarat suatu rangkaian listrik dapat mengalirkan arus listrik?
+			        	    		</td>
+			        	    	    <td><input style="max-width: 600px; min-width: 400px" type="text" name="firstname"><br>
+			        	    	    </td>	
+			        	    	</tr>
+			        	    	<tr>
+			        	    		<td style="min-width: 400px">3. Dengan kalimatmu sendiri, definisikanlah apa yang dimaksud dengan arus listrik dan tegangan listrik? 
+			        	    		</td>
+			        	    	    <td><input style="max-width: 600px; min-width: 400px" type="text" name="firstname"><br>
+			        	    	    </td>	
+			        	    	</tr>
+			        	    	<tr>
+			        	    		<td style="min-width: 400px">4. Terdapat sebuah rangkaian tertutup yang terdiri atas hambatan, amperemeter, dan sumber tegangan seperti pada gambar dibawah ini. Jika besarnya hambatan adalah 10Ω dan sumber tegangan sebesar 3 V. Tentukan besarnya kuat arus (I) yang ditunjukkan oleh amperemeter! <br>
+			        	    		<img src="Pictures/Picture1.png">
+			        	    		</td>
+			        	    	    <td><input style="max-width: 600px; min-width: 400px" type="text" name="firstname"><br>
+			        	    	    </td>	
+			        	    	</tr>
+			        	    </tbody>
+		        	    </table>
+		        	</div>
+	        	    <div style="width: 100%; text-align: center;margin-top: 40px">
+	      				<button type="submit" class="btn btn-primary">Kirim Jawaban</button>
+	        	    </div>
+				</form> 
+                <div style="width: 100%;text-align: center;">
+			        <a href="home.html"><button class="btn btn-danger" style="min-width: 240px">Kembali ke Beranda</button></a>
+			    </div>
+			</div>
+			<div class="hidden-md-down col-lg-1">
+
+			</div>
+        </div>
+	</div>
+    <div id="footer" class="footer">
+			<div class="row">
+				<div class="col-md-1">
+					
+				</div>
+				<div class="col-md-2" style="padding: 20px 40px">
+					<img src="Pictures/logo.png" height="auto" width="100%">
+				</div>
+				<div class="col-md-8" style="text-align:left;padding: 40px 40px 10px 40px">
+        		<h3>Pengembangan Laboratorium Virtual Fisika Berbasis Website untuk Pokok Bahasan Listrik Dinamis</h3>
+					<h4>&copy;Ni Ketut Rahayu@2018</h4>
+				</div>
+				<div class="col-md-1">
+					
+				</div>
+			</div>
+	</div>
+	<div id="modenya" style="display:none">volt</div>
+	<div id="is_started" style="display:none">no</div>
+	<script type="text/javascript" src="javascript/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="javascript/resistor.js"></script>
+	<script type="text/javascript" src="javascript/breadboard.js"></script>
+	<script type="text/javascript" src="javascript/multimeter.js"></script>
+	<script type="text/javascript" src="javascript/power.js"></script>
+	<script type="text/javascript" src="javascript/kabel.js"></script>
+	<script type="text/javascript" src="javascript/multi_indicator_and_knob.js"></script>
+	<script type="text/javascript" src="javascript/power_indicator_and_knob.js"></script>
+	<script type="text/javascript" src="javascript/drag_n_drop.js"></script>
+    <script type="text/javascript" src="javascript/scaling.js"></script>
+	<script type="text/javascript" src="javascript/timer.js"></script>
+	<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript/popper.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,786 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		
+	</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Aladin|Just+Another+Hand|Merienda+One|Pangolin|Sue+Ellen+Francisco" rel="stylesheet">
+
+    <style type="text/css">  	
+        @font-face { font-family: JuneBug; src: url('font/digital-italic.ttf'); } 
+    </style>
+</head>
+<body  style="background-color: #e6ac79;">	
+	<div id="timer-box" class="hidden" style="position: fixed;z-index: 9000;top: 0px;right: 0px;padding: 15px;
+	background-color: rgb(18, 18, 17);border-radius: 80px;">
+		<h3 style="font-family: JuneBug;color: red;font-size: 200%;font-weight: bold;" id="time-counter"></h3></div>
+	
+	<div class="header-box">
+		<div style="width:100%;height:auto; text-align: center; padding: 0; margin: 10px 0">
+			<h1 class="main-title">Laboratorium Virtual Fisika Listrik Dinamis</h1><br>
+			<h3 class="sub-title"><span>Sub Modul :</span><br>
+			Pengukuran Besaran Hambatan Resistor</h3>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" id="mainObjective">
+			<div class="hidden-md-down col-lg-1">
+
+			</div>
+            <div class="list-group col-lg-10" style="text-align: center;padding-right: 0">
+            	<h3 class="list-group-item active">Prosedur Praktikum :</h3>
+
+            	<!-- MASUKAN PROSEDUR Praktikum DISINI -->
+				<div class="accordion" id="accordionExample">
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsez" aria-expanded="true" aria-controls="collapsez">
+				                1. Panduan Pemakaian Simulasi <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapsez" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <img src="Pictures/mengukur-hambatan.gif" width="100%" height="auto">
+				                <p style="font-size:14px;margin: 20px 0 0 0"><b>NOTE :</b></p>
+				                <ul style="font-size:14px;text-align: left;">
+   				                    <li>Untuk memasang resistor pada breadboard perhatikan simbol tangan yang ada pada kursor di layar. Sesuaikan posisi kursor dengan lubang berwana hijau.</li>
+   				                    <li>Pasanglah resistor pada lubang breadboard yang masih kosong. <b>Jangan memasang resistor pada lubang yang sudah berwarna merah.</b></li>
+   				                    <li>Untuk melakukan pengukuran hambatan resistor, pasang kabel multimeter sesuai instruksi di video.</li>
+
+				                    <li>Untuk memutar knop multimeter ke kiri, tekan <b> CTRL + Klik </b> mouse</li>
+                                    <li>Untuk memutar knop multimeter ke kanan, cukup <b> Klik </b> mouse</li>
+				                </ul>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+				                2. Klik tombol mulai untuk memulai praktikum. <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapse2" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <p style="font-size:14px;margin: 20px 0 0 0">
+				            	Klik tombol <b>MULAI</b> yang ada di bagian bawah untuk menggunakan simulasi.
+				                <br>Penghitung waktu akan berjalan saat tombol 'MULAI' ditekan.</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+				                3. Buatlah Rangkaian <b>Seri</b> seperti Gambar di bawah ini <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapse3" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <img src="Pictures/rangkaian-seri.png">
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+				                4. Ukurlah Nilai Resistor. <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapse4" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <p style="font-size:14px;margin: 20px 0 0 0">
+				            	Ukurlah  nilai – nilai resistor R1, R2 dan R3 menggunakan ohmmeter, catat hasil pengukuran kamu di Form jawaban.</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+				                5. Ukurlah Nilai Hambatan Total <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapse5" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <p style="font-size:14px;margin: 20px 0 0 0">
+				            	Ukurlah nilai  R<sub>total</sub> pada rangkaian seri menggunakan multimeter, catat data yang ditampilkan multimeter di Form jawaban</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link">
+				                6. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
+				                </button>
+				            </h5>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+				                7. Buatlah Rangkaian <b>Paralel</b> seperti Gambar di bawah ini <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapse7" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <img src="Pictures/rangkaian-paralel.png">
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+				                8. Ukurlah Nilai Resistor. <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapse8" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <p style="font-size:14px;margin: 20px 0 0 0">
+				            	Ukurlah  nilai – nilai resistor R1, R2 dan R3 menggunakan ohmmeter, catat hasil pengukuran kamu di Form jawaban.</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+				                9. Ukurlah Nilai Hambatan Total <span style="font-size: 85%">  &lt;&lt; klik</span>
+				                </button>
+				            </h5>
+				        </div>
+
+				        <div id="collapse9" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+				            <div class="card-body" style="text-align: left;">
+				                <p style="font-size:14px;margin: 20px 0 0 0">
+				            	Ukurlah nilai  R<sub>total</sub> pada rangkaian paralel menggunakan multimeter, catat data yang ditampilkan multimeter di Form jawaban</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link">
+				                10. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
+				                </button>
+				            </h5>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link">
+				                11. Ulangi prosedur percobaan 1 sampai 10 untuk percobaan kedua dan ketiga. 
+				                </button>
+				            </h5>
+				        </div>
+				    </div>
+				    <div class="card">
+				        <div class="card-header" id="headingz">
+				            <h5 class="mb-0">
+				                <button class="btn btn-link">
+				                12. Klik <b>Simpan Jawaban</b> untuk menyimpan data hasil praktikum
+				                </button>
+				            </h5>
+				        </div>
+				    </div>
+			    </div>
+            	<h3 class="list-group-item active">Waktu Praktikum :</h3>
+
+            	<!-- MASUKAN BATAS WAKTU Praktikum DISINI -->
+            	<p style="text-align: left;">
+					Batas waktu yang diberikan untuk menyelesaikan Praktikum ini adalah : <strong id="batas-waktu" 
+					class="sub-title" style="font-size: 200%">30</strong> menit
+            	</p>
+			<div class="hidden-md-down col-lg-1"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="simulations">
+		<div id="sim-container" class="col-md-12 col-lg-12"  style="padding: 0; margin-bottom: 40px">
+			<div style="position: relative;">
+				<img id="img-floor" src="Pictures/BG_FLOOR.png" style="position:absolute;left:0px;top:0px;width:780px;height:auto;z-index:0">
+
+				<img id="img-table" src="Pictures/TABLE.png" style="position:absolute;left:0px;top:0px;width:780px;height:auto;z-index:0">
+		    <div id="dumps">
+		    	
+   			    <div style="background-color: transparent;display: block;width: 110px; height: 75px; position: absolute; left: 542px; top: 68px; z-index: 4;" id="dump" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+				<img src="Pictures/DUMP_BOX.png" style="transform:rotate(0deg); position:absolute;left:525px;top:30px;width:150px;height:auto;z-index:3">
+		    </div>
+            <div id="main-components">
+				<img id="breadboard" src="Pictures/BREADBOARD.png" style="position:absolute;left:80px;top:0px;width:780px;height:auto;z-index:0">
+
+				<img class="multimeterImg" src="Pictures/MULTIMETER.png" style="position:absolute;left:0px;top:0px;width:780px;height:auto;z-index:3">
+
+				<img src="Pictures/POWER_SUPPLY.png" style="display:none;position:absolute;left:0px;top:0px;width:780px;height:auto;z-index:3">
+				<img id="btnPowerSupply" src="Pictures/POWER_OFF.png" style="display:none;position:absolute;left:35px;top:360px;width:50px;height:auto;z-index:5;cursor: pointer;">
+
+				<img class="multimeterImg" id="btnMultimeter" src="Pictures/POWER_OFF.png" style="position:absolute;left:487px;top:282px;width:30px;height:auto;z-index:5;cursor: pointer;">
+
+				<img class="multimeterImg" id="knobMultimeter" src="Pictures/KNOB_PUTAR.png" style="position:absolute;left:506px;top:302px;width:80px;height:auto;z-index:5;cursor: pointer;-webkit-backface-visibility:hidden">
+
+				<img id="knobPowerSupply" src="Pictures/KNOB_PUTAR.png" style="display:none;position:absolute;left:122px;top:362px;width:42px;height:auto;z-index:5;cursor: pointer; transform: rotate(-96deg);-webkit-backface-visibility:hidden">
+
+
+				<img id="probeRedMulti" class="probe" src="Pictures/PROBE_RED.png" draggable="true" ondragstart="drag(event)" style="display:none;left:120px;top:40px;">
+
+				<img id="probeBlackMulti" class="probe" src="Pictures/PROBE_BLACK.png" draggable="true" ondragstart="drag(event)" style="display:none;left:120px;top:52px;">
+
+				<img id="probeRedPower" class="probe" src="Pictures/PROBE_RED.png" draggable="true" ondragstart="drag(event)" style="left:168px;top:140px;">
+
+				<img id="probeBlackPower" class="probe" src="Pictures/PROBE_BLACK.png" draggable="true" ondragstart="drag(event)" style="left:128px;top:140px;">
+
+				<div id="powerLed1" class="indicator" style="display:none;left:115px; top: 370px"></div>
+				<div id="powerLed2" class="indicator" style="display:none;left:126px; top: 360px"></div>
+				<div id="powerLed3" class="indicator" style="display:none;left:139px; top: 355px"></div>
+				<div id="powerLed4" class="indicator" style="display:none;left:154px; top: 360px"></div>
+				<div id="powerLed5" class="indicator" style="display:none;left:164px; top: 370px"></div>
+
+				<div id="multiLed1" class="indicator multimeterImg" style="left:496px; top: 353px"></div>
+				<div id="multiLed2" class="indicator multimeterImg" style="left:494px; top: 340.5px"></div>
+				<div id="multiLed3" class="indicator multimeterImg" style="left:496px; top: 328px"></div>
+				<div id="multiLed4" class="indicator multimeterImg" style="left:500px; top: 316px"></div>
+				<div id="multiLed5" class="indicator multimeterImg" style="left:518px; top: 298px"></div>
+				<div id="multiLed6" class="indicator multimeterImg" style="left:530px; top: 293px"></div>
+				<div id="multiLed7" class="indicator multimeterImg" style="left:543px; top: 291.5px"></div>
+				<div id="multiLed8" class="indicator multimeterImg" style="left:555px; top: 293px"></div>
+				<div id="multiLed9" class="indicator multimeterImg" style="left:567px; top: 298px"></div>
+				<div id="multiLed10" class="indicator multimeterImg" style="left:577px; top: 306px"></div>
+				<div id="multiLed11" class="indicator multimeterImg" style="left:585px; top: 315.5px"></div>
+				<div id="multiLed12" class="indicator multimeterImg" style="left:592px; top: 340.5px"></div>
+				<div id="multiLed13" class="indicator multimeterImg" style="left:590px; top: 353px"></div>
+				<div id="multiLed14" class="indicator multimeterImg" style="left:585.5px; top: 364.5px"></div>
+				<div id="multiLed15" class="indicator multimeterImg" style="left:577px; top: 374.8px"></div>
+
+		    	<h1  id="displayMultimeter" class="display multimeterImg" style="left:498px;">0</h1>
+		    	<h3  id="displayMultimeterSmall" class="display display-small multimeterImg" style="left:585px;"> &#x2126;</h3>
+
+
+			
+
+			<!--###############################################################################################################
+
+				
+			###############################################################################################################-->
+				<canvas id="myCanvas" class="canvas" width="768" height="475">
+		        </canvas>
+
+				<div> <!--KOLOM 30 BREADBOARD-->
+					<div class="dot col30 rowA" id="div30_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col30 rowB" id="div30_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col30 rowC" id="div30_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col30 rowD" id="div30_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col30 rowE" id="div30_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 29 BREADBOARD-->
+					<div class="dot col29 rowA" id="div29_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col29 rowB" id="div29_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col29 rowC" id="div29_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col29 rowD" id="div29_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col29 rowE" id="div29_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 28 BREADBOARD-->
+					<div class="dot col28 rowA" id="div28_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col28 rowB" id="div28_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col28 rowC" id="div28_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col28 rowD" id="div28_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col28 rowE" id="div28_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 27 BREADBOARD-->
+					<div class="dot col27 rowA" id="div27_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col27 rowB" id="div27_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col27 rowC" id="div27_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col27 rowD" id="div27_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col27 rowE" id="div27_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 26 BREADBOARD-->
+					<div class="dot col26 rowA" id="div26_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col26 rowB" id="div26_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col26 rowC" id="div26_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col26 rowD" id="div26_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col26 rowE" id="div26_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 25 BREADBOARD-->
+					<div class="dot col25 rowA" id="div25_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col25 rowB" id="div25_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col25 rowC" id="div25_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col25 rowD" id="div25_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col25 rowE" id="div25_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 24 BREADBOARD-->
+					<div class="dot col24 rowA" id="div24_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col24 rowB" id="div24_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col24 rowC" id="div24_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col24 rowD" id="div24_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col24 rowE" id="div24_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 23 BREADBOARD-->
+					<div class="dot col23 rowA" id="div23_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col23 rowB" id="div23_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col23 rowC" id="div23_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col23 rowD" id="div23_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col23 rowE" id="div23_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 22 BREADBOARD-->
+					<div class="dot col22 rowA" id="div22_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col22 rowB" id="div22_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col22 rowC" id="div22_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col22 rowD" id="div22_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col22 rowE" id="div22_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 21 BREADBOARD-->
+					<div class="dot col21 rowA" id="div21_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col21 rowB" id="div21_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col21 rowC" id="div21_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col21 rowD" id="div21_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col21 rowE" id="div21_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<!--###############################################################################################################
+
+
+				###############################################################################################################-->
+
+				<div> <!--KOLOM 20 BREADBOARD-->
+					<div class="dot col20 rowA" id="div20_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col20 rowB" id="div20_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col20 rowC" id="div20_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col20 rowD" id="div20_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col20 rowE" id="div20_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 19 BREADBOARD-->
+					<div class="dot col19 rowA" id="div19_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col19 rowB" id="div19_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col19 rowC" id="div19_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col19 rowD" id="div19_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col19 rowE" id="div19_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 18 BREADBOARD-->
+					<div class="dot col18 rowA" id="div18_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col18 rowB" id="div18_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col18 rowC" id="div18_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col18 rowD" id="div18_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col18 rowE" id="div18_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 17 BREADBOARD-->
+					<div class="dot col17 rowA" id="div17_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col17 rowB" id="div17_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col17 rowC" id="div17_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col17 rowD" id="div17_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col17 rowE" id="div17_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 16 BREADBOARD-->
+					<div class="dot col16 rowA" id="div16_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col16 rowB" id="div16_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col16 rowC" id="div16_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col16 rowD" id="div16_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col16 rowE" id="div16_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 15 BREADBOARD-->
+					<div class="dot col15 rowA" id="div15_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col15 rowB" id="div15_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col15 rowC" id="div15_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col15 rowD" id="div15_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col15 rowE" id="div15_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 14 BREADBOARD-->
+					<div class="dot col14 rowA" id="div14_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col14 rowB" id="div14_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col14 rowC" id="div14_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col14 rowD" id="div14_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col14 rowE" id="div14_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 13 BREADBOARD-->
+					<div class="dot col13 rowA" id="div13_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col13 rowB" id="div13_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col13 rowC" id="div13_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col13 rowD" id="div13_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col13 rowE" id="div13_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 12 BREADBOARD-->
+					<div class="dot col12 rowA" id="div12_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col12 rowB" id="div12_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col12 rowC" id="div12_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col12 rowD" id="div12_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col12 rowE" id="div12_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 11 BREADBOARD-->
+					<div class="dot col11 rowA" id="div11_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col11 rowB" id="div11_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col11 rowC" id="div11_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col11 rowD" id="div11_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col11 rowE" id="div11_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<!--###############################################################################################################
+
+
+				###############################################################################################################-->
+
+				<div> <!--KOLOM 10 BREADBOARD-->
+					<div class="dot col10 rowA" id="div10_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col10 rowB" id="div10_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col10 rowC" id="div10_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col10 rowD" id="div10_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col10 rowE" id="div10_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 9 BREADBOARD-->
+					<div class="dot col9 rowA" id="div9_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col9 rowB" id="div9_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col9 rowC" id="div9_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col9 rowD" id="div9_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col9 rowE" id="div9_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 8 BREADBOARD-->
+					<div class="dot col8 rowA" id="div8_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col8 rowB" id="div8_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col8 rowC" id="div8_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col8 rowD" id="div8_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col8 rowE" id="div8_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 7 BREADBOARD-->
+					<div class="dot col7 rowA" id="div7_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col7 rowB" id="div7_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col7 rowC" id="div7_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col7 rowD" id="div7_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col7 rowE" id="div7_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 6 BREADBOARD-->
+					<div class="dot col6 rowA" id="div6_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col6 rowB" id="div6_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col6 rowC" id="div6_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col6 rowD" id="div6_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col6 rowE" id="div6_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 5 BREADBOARD-->
+					<div class="dot col5 rowA" id="div5_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col5 rowB" id="div5_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col5 rowC" id="div5_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col5 rowD" id="div5_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col5 rowE" id="div5_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 4 BREADBOARD-->
+					<div class="dot col4 rowA" id="div4_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col4 rowB" id="div4_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col4 rowC" id="div4_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col4 rowD" id="div4_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col4 rowE" id="div4_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 3 BREADBOARD-->
+					<div class="dot col3 rowA" id="div3_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col3 rowB" id="div3_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col3 rowC" id="div3_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col3 rowD" id="div3_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col3 rowE" id="div3_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 2 BREADBOARD-->
+					<div class="dot col2 rowA" id="div2_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col2 rowB" id="div2_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col2 rowC" id="div2_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col2 rowD" id="div2_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col2 rowE" id="div2_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+
+				<div> <!--KOLOM 1 BREADBOARD-->
+					<div class="dot col1 rowA" id="div1_a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col1 rowB" id="div1_b" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col1 rowC" id="div1_c" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col1 rowD" id="div1_d" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="dot col1 rowE" id="div1_e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+		    </div>
+            <div id="sidebar" style="position: absolute;z-index: 900">
+				<img src="Pictures/SIDE_PANEL.png" style="position:absolute;right:0px;top:0px;width:780px;height:auto;z-index:3">
+
+				<img src="Pictures/COMP_TRAY.png" style="position:absolute;right:0px;top:0px;width:780px;height:auto;z-index:3">
+
+				<img src="Pictures/RESITOR_BOX.png" style="position:absolute;right: 20px;top:114px;width:55px;height:auto;z-index:4">
+			</div>
+            <div id="sidebar-components" style="position: absolute;z-index: 1900">
+				<img id="r100" class="resistor 100" src="Pictures/R_100_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:125px">
+				<img id="r1K" class="resistor 1000" src="Pictures/R_1K_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:160px">
+				<img id="r10K" class="resistor 10000" src="Pictures/R_10K_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:195px">
+				<img id="r100K" class="resistor 100000" src="Pictures/R_100K_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:228px">
+				<img id="r220" class="resistor 220" src="Pictures/R_220_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:260px">
+				<img id="r2,2K" class="resistor 2200" src="Pictures/R_2,2K_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:294px">
+				<img id="r4,7K" class="resistor 4700" src="Pictures/R_4,7K_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:328px">
+				<img id="r470K" class="resistor 470000" src="Pictures/R_470K_SIDE.png" draggable="true" ondragstart="drag(event)" style="right:26px;top:362px">
+            </div>
+			<!--###############################################################################################################
+
+
+			###############################################################################################################-->
+		    </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 60px; padding:0">
+        <div class="row">
+        	<div class="hidden-md-down col-lg-1">
+
+			</div>
+			<div class="list-group col-lg-10" style="text-align: left;padding-right: 0">
+            	<h3 class="list-group-item active" style="text-align: center;">Blanko Percobaan</h3>
+
+				<div id="form-message-box" style="width: 100%; padding: 20px; text-align: center;">
+
+            	    <P style="text-align: center;">Klik untuk mulai mengisi Blanko Percobaan</p>
+					<button id="btn-start" class="btn btn-success" style="min-width: 140px">Mulai</button>
+				</div>
+			</div>
+			<div class="hidden-md-down col-lg-1">
+
+			</div>
+        </div> 
+	</div>    
+	<div class="container" style="width:100%; max-width:none; padding:0">
+		<div class="row" id="mainForm">
+			<div class="list-group col-lg-12" style="text-align: left;padding-right: 0">
+	        	<form action="/submit/hambatan/" id="form-jawaban" class="hidden" style="padding: 40px">
+		        	<div>
+		        	    <table class="table" style="margin: 10px 0">
+		        	    	<tbody>
+		        	    	   	<tr style="border: 1px solid #fff">
+			        	    		<th>Nama : 
+			        	    		</th>
+				        	    	<td>Ni Ketut Rahayu
+				        	    	</td>
+			        	    		<th style="border-left: 1px solid #fff">NIM : 
+			        	    		</th>
+				        	    	<td>12345680
+				        	    	</td>	
+			        	    		<th style="border-left: 1px solid #fff">Fakultas : 
+			        	    		</th>
+				        	    	<td>FKIP
+				        	    	</td>	
+			        	    		<th style="border-left: 1px solid #fff">Jurusan :
+			        	    		</th>
+				        	    	<td>Pendidikan Fisika
+				        	    	</td>	        	
+			        	    	</tr>
+			        	    </tbody>
+			        	</table>
+		        	    <table class="table" style="margin: 10px 0">
+		        	    	<tbody>
+			        	    	<tr>
+			        	    		<td>Rangkaian Seri 
+			        	    		</td>
+			        	    	</tr>
+			        	    	<tr>	 	        	    		
+			        	    		<th>Percobaan 
+			        	    		</th>       	    		
+			        	    		<th>Resistor 1 
+			        	    		</th>
+			        	    		<th>Resistor 2 
+			        	    		</th>
+			        	    		<th>Resistor 3 
+			        	    		</th>
+			        	    		<th>Total Hambatan 
+			        	    		</th>
+			        	    	</tr>
+			        	    	<tr> 
+			        	    	    <td>1
+			        	    	    </td>    	    		  
+				        	    	<td>
+							        	<input type="text" name="seri1res1"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri1res2"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri1res3"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri1total"><br>
+				        	    	</td>	
+			        	    	</tr>
+			        	    	<tr>   
+			        	    	    <td>2
+			        	    	    </td>  	    		  
+				        	    	<td>
+							        	<input type="text" name="seri2res1"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri2res2"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri2res3"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri2total"><br>
+				        	    	</td>		
+			        	    	</tr>
+			        	    	<tr>   
+			        	    	    <td>3
+			        	    	    </td>  	    		  
+				        	    	<td>
+							        	<input type="text" name="seri3res1"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri3res2"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri3res3"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="seri3total"><br>
+				        	    	</td>		
+			        	    	</tr>
+			        	    	<tr>
+			        	    		<td>Rangkaian Paralel
+			        	    		</td>
+			        	    	</tr>
+			        	    	<tr>	 	        	    		
+			        	    		<th>Percobaan 
+			        	    		</th>  	        	    		
+			        	    		<th>Resistor 1 
+			        	    		</th>
+			        	    		<th>Resistor 2
+			        	    		</th>
+			        	    		<th>Resistor 3
+			        	    		</th>
+			        	    		<th>Total Hambatan
+			        	    		</th>
+			        	    	</tr>
+			        	    	<tr> 
+			        	    	    <td>1
+			        	    	    </td>    	    		  
+				        	    	<td>
+							        	<input type="text" name="para1res1"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para1res2"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para1res3"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para1total"><br>
+				        	    	</td>	
+			        	    	</tr>
+			        	    	<tr>   
+			        	    	    <td>2
+			        	    	    </td>  	    		  
+				        	    	<td>
+							        	<input type="text" name="para2res1"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para2res2"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para2res3"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para2total"><br>
+				        	    	</td>		
+			        	    	</tr>
+			        	    	<tr>  
+			        	    	    <td>3
+			        	    	    </td>   	    		  
+				        	    	<td>
+							        	<input type="text" name="para3res1"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para3res2"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para3res3"><br>
+				        	    	</td>	   
+				        	    	<td>
+							        	<input type="text" name="para3total"><br>
+				        	    	</td>		
+			        	    	</tr>
+			        	    </tbody>
+		        	    </table>
+		        	</div>
+	        	    <div style="width: 100%; text-align: center;margin-top: 40px">
+	      				<button type="submit" class="btn btn-primary">Simpan Jawaban</button>
+	        	    </div>
+				</form> 
+                <div style="width: 100%;text-align: center;">
+			        <a href="/"><button class="btn btn-danger" style="min-width: 240px">Kembali ke Beranda</button></a>
+			    </div>
+			</div>
+        </div> 
+	</div>
+    <div id="footer" class="footer">
+			<div class="row">
+				<div class="col-md-1">
+					
+				</div>
+				<div class="col-md-2" style="padding: 20px 40px">
+					<img src="Pictures/logo.png" height="auto" width="100%">
+				</div>
+				<div class="col-md-8" style="text-align:left;padding: 40px 40px 10px 40px">
+        		<h3>Pengembangan Laboratorium Virtual Fisika Berbasis Website untuk Pokok Bahasan Listrik Dinamis</h3>
+					<h4>&copy;Ni Ketut Rahayu@2018</h4>
+				</div>
+				<div class="col-md-1">
+					
+				</div>
+			</div>
+	</div>
+	<div id="modenya" style="display:none">ohm</div>
+	<div id="is_started" style="display:none">no</div>
+	<script type="text/javascript" src="javascript/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="javascript/resistor.js"></script>
+	<script type="text/javascript" src="javascript/breadboard.js"></script>
+	<script type="text/javascript" src="javascript/multimeter.js"></script>
+	<script type="text/javascript" src="javascript/power.js"></script>
+	<script type="text/javascript" src="javascript/kabel.js"></script>
+	<script type="text/javascript" src="javascript/multi_indicator_and_knob.js"></script>
+	<script type="text/javascript" src="javascript/power_indicator_and_knob.js"></script>
+	<script type="text/javascript" src="javascript/drag_n_drop.js"></script>
+    <script type="text/javascript" src="javascript/scaling.js"></script>
+	<script type="text/javascript" src="javascript/timer.js"></script>
+	<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript/popper.min.js"></script>
+</body>
+</html>
