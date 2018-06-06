@@ -12,29 +12,17 @@
         @font-face { font-family: JuneBug; src: url('font/digital-italic.ttf'); } 
     </style>
 </head>
-<nav class="navbar navbar-inverse fixed-top">
-		<div class="container-fluid">
-		  <div class="navbar-header">
-			<a class="navbar-brand" href="#">KetsLabVir</a>
-		  </div>
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">Teori Dasar</a></li>
-			<li><a href="#">Pre Test</a></li>
-			<li><a href="#">Simulasi</a></li>
-		  </ul>
-		</div>
-</nav>
-<body style="background-image: url('Pictures/bg-lab.jpg');">
+
+<body>
 	<div style="width: 100%;height: 100%; position: fixed; bottom: 0; left: 0; z-index: -1; 
-	background-color: #e6ac79;">
+	background-color: #181c3c;">
 		
 	</div>
 	<div id="timer-box" class="hidden" style="position: fixed;z-index: 9000;top: 0; right: 0;padding: 40px;
 	background-color: #ff0"><h3 id="time-counter"></h3></div>
 	<div style="position: relative;width:100%; height:620px;"> 
-		<div id="particles-js" style="width: 100%; height: 620px; text-align:center; background:linear-gradient(#000527, #00062c, #010840, #000223);
-			box-shadow:0 -110px 0 -2px #08125a inset, 0 -210px 0 -2px #000527 inset,0 3px 16px rgba(0,0,0,0.48);
+		<div id="particles-js" style="width: 100%; height: 620px; text-align:center; background:#181c3c;
+			box-shadow:0 -110px 0 -2px #181c3c inset, 0 -210px 0 -2px #000527 inset,0 3px 16px rgba(0,0,0,0.48);
 		padding:20px 0">
 	    </div>
 	    <div style="position: absolute; bottom: 110px; left: 0; z-index: 100; width: 100%; text-align: center;">
@@ -51,7 +39,17 @@
 				</div>
 			</div>
 		</div>
-    </div>
+	</div>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid" style="display: flex; justify-content: center">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#">HOME</a></li>
+			<li><a href="#">TEORI DASAR</a></li>
+			<li><a href="#">PRETEST</a></li>
+			<li><a href="#">SIMULASI</a></li>
+		  </ul>
+		</div>
+	</nav>
 	<div class="container" style="width: auto; max-width: 1100px">
 		
 		<div class="row" id="mainObjective">
@@ -77,7 +75,7 @@
 	            	    </div>
 	                </div>
 	                <div class="col-xs-12 col-md-7"
-	                    style="background-color: #7d3e70; padding: 20px 40px 20px 10px">
+	                    style="background-color: #26283c; padding: 20px 40px 20px 10px">
 		            	<ol style="text-align:left;">
                             <li>Dapat merangkai dan menganalisa rangkaian R-Seri dan Paralel</li>
                             <li>Mengukur nilai tahanan suatu resistor menggunakan ohmmeter</li>
@@ -142,7 +140,7 @@
 	            	    </div>
 	                </div>
 	                <div class="col-xs-12 col-md-7"
-	                    style="background-color: #7d3e70; padding: 20px 40px 20px 10px">
+	                    style="background-color: #26283c; padding: 20px 40px 20px 10px">
 		            	<!-- MASUKAN TUJUAN Praktikum DISINI -->
 		            	<div style="text-align: left;">
 		            	    <ol style="text-align:left;">

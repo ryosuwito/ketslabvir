@@ -26,14 +26,16 @@ tr{
 	flex-direction: row;
 }
 .navbar-inverse{
-	background: #444;
-	color:#fff
+	background: #ff9ee1;
 }
 .navbar .navbar-nav > li > a {
-	color: #fff;
+	color: #222;
 }
 .navbar-header > a {
-	color: #fff;
+	color: #222;
+}
+.navbar-header > a:hover {
+	color: #444;
 }
 .card-header{
 	text-align: left;
