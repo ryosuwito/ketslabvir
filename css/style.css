@@ -1,11 +1,11 @@
 body{
-	background-size: 100% 100%;
-	background-attachment: fixed;
+	background: #181c3c;
 }
 form{
-	background-color: #08125a;
 	margin-bottom: 40px;
-	box-shadow:0 15px #000527, 0 -15px #000527;
+}
+.badge{
+	color: #f80
 }
 table{
 	font-size: 16px;
@@ -27,6 +27,7 @@ tr{
 }
 .navbar-inverse{
 	background: #ff9ee1;
+	box-shadow: 0 5px 0 0 #7d3e70
 }
 .navbar .navbar-nav > li > a {
 	color: #222;
@@ -39,21 +40,22 @@ tr{
 }
 .card-header{
 	text-align: left;
+	padding: 2px 10px;
+}
+h5 > .btn{
+	padding: 2px 10px;
 }
 .header-box{
 	width:100%; 
 	text-align:center; 
-	background:linear-gradient(#000527, #08125a);
-	box-shadow:0 -20px 0 -2px #08125a inset, 0 -120px 0 -2px #000527 inset,0 3px 16px rgba(0,0,0,0.48);
+	background:#181c3c;
+	box-shadow:0 -20px 0 -2px #181c3c inset, 0 -120px 0 -2px #000527 inset,0 3px 16px rgba(0,0,0,0.48);
 	padding:20px 0;
 	color:#fff;
 }
 .simulations{
 	width: 100%; 
 	margin-top:20px;
-	padding: 40px 0 10px 0;
-	background-color:#08125a;
-	box-shadow:0 15px #000527, 0 -15px #000527;
 }
 .main-title, .sub-title{
 	font-family: 'Aladin', cursive;
@@ -84,21 +86,21 @@ ol > li:hover{
 	background-color: transparent;
 }
 .footer{
-	margin-top: 70px;
+	margin-top: 10px;
 	width: 100%;
-	min-height: 200px;
+	height: auto;
 	background-color:#7d3e70;
 	color:#fff;
 	font-family: 'Aladin', cursive;
-	box-shadow: 0 -30px 0 0 #c36eb2 inset, 0px -2px 12px rgba(0,0,0,0.48);
+	box-shadow: 0 -15px 0 0 #c36eb2, 0px -17px 12px rgba(0,0,0,0.48);
 }
 .list-group-item.active {
     z-index: 2;
     color: #fff;
     border-radius: 6px;
-    background: #c36eb2;
-	border-color: #fff;
-	margin: 20px 0;
+    background: #ff9ee1;
+	color: #222;
+	margin: 20px 0 0 0;
 	box-shadow: 0px -14px 0px -4px #7d3e70 inset;
     font-family: 'Aladin', cursive;
 }
