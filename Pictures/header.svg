@@ -1,0 +1,16 @@
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="40.387mm" width="188.69mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 668.57143 143.10215" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<defs id="defs4">
+		<linearGradient id="linearGradient4385" y2="126.1" gradientUnits="userSpaceOnUse" x2="317.14" y1="24.667" x1="317.14">
+			<stop id="stop4381" stop-color="#27428b" offset="0"/>
+			<stop id="stop4383" stop-color="#27428b" stop-opacity="0" offset="1"/>
+		</linearGradient>
+	</defs>
+	<g id="layer1" transform="translate(-8.5714 -46.648)">
+		<g id="layer1-2" transform="translate(.000014208 .0000018846)">
+			<path id="path4154-9" d="m8.5714 50.855h668.57v138.9l-334.29-16.806-334.29 16.806z" fill="#505cba"/>
+			<path id="rect4138-1" d="m8.5714 46.648h668.57v138.9l-334.28-16.81-334.29 16.8z" fill="#1d3168"/>
+			<path id="rect3336-2" d="m8.5714 46.648h668.57v112.58l-334.65 9.511-333.92-9.511z" fill-opacity="0"/>
+			<path id="path4377" d="m8.5714 46.648h668.57v138.9l-334.28-16.81-334.29 16.8z" fill="url(#linearGradient4385)"/>
+		</g>
+	</g>
+</svg>

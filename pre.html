@@ -12,11 +12,21 @@
         @font-face { font-family: JuneBug; src: url('font/digital-italic.ttf'); } 
     </style>
 </head>
-<body  style="background-color:#e6ac79;">	
-	
-	<div id="timer-box" class="hidden" style="position: fixed;z-index: 9000;top: 0px;right: 0px;padding: 15px;
-	background-color: rgb(18, 18, 17);border-radius: 80px;">
-		<h3 style="font-family: JuneBug;color: red;font-size: 200%;font-weight: bold;" id="time-counter"></h3></div>
+<body  style="padding-top: 40px">	
+	<div style=" width: 100%; height: 100%; position: fixed; z-index: -1;
+	background-image: url('Pictures/background2.svg'); background-size: cover;">
+	</div>
+	<nav class="navbar navbar-inverse navbar-fixed-top"
+		style="position: fixed; width: 100%; z-index: 2000; top:0">
+		<div class="container-fluid" style="display: flex; justify-content: center">
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="#">HOME</a></li>
+			<li><a href="#">TEORI DASAR</a></li>
+			<li><a href="#">PRETEST</a></li>
+			<li><a href="#">SIMULASI</a></li>
+			</ul>
+		</div>
+	</nav>
     <div class="header-box">
 		<div style="width:100%;height:auto; text-align: center; padding: 0; margin: 10px 0">
 			<h1 class="main-title">Laboratorium Virtual Fisika Listrik Dinamis</h1><br>
@@ -24,52 +34,56 @@
 			Pengukuran Tegangan Listrik Arus Searah</h3>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" style="padding:0 15px">
 		<div class="row" id="mainObjective">
 			<div class="hidden-md-down col-lg-1">
 
 			</div>
             <div class="list-group col-lg-10" style="text-align: center;padding-right: 0">
-            	<h3 class="list-group-item active">Prosedur Pre Test :</h3>
-
-            	<!-- MASUKAN PROSEDUR Praktikum DISINI -->
-				<div class="accordion" id="accordionExample">
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link">
-				                1. Isilah pertanyaan di bawah ini dengan baik dan benar
-				                </button>
-				            </h5>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link">
-				                2. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
-				                </button>
-				            </h5>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link">
-				                9. Klik <b>Simpan Jawaban</b> untuk menyimpan data hasil praktikum
-				                </button>
-				            </h5>
-				        </div>
-				    </div>
+            	<h3 onClick="openBox()" class="list-group-item active">Prosedur Pre Test <sup>
+					*(klik)</sup>
+				</h3>
+				<div id="prosedur-box" class="hidden">
+					<!-- MASUKAN PROSEDUR Praktikum DISINI -->
+					<div class="accordion" id="accordionExample">
+							<div class="card">
+								<div class="card-header" id="headingz">
+									<h5 class="mb-0">
+										<button class="btn btn-link">
+										1. Isilah pertanyaan di bawah ini dengan baik dan benar
+										</button>
+									</h5>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingz">
+									<h5 class="mb-0">
+										<button class="btn btn-link">
+										2. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
+										</button>
+									</h5>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingz">
+									<h5 class="mb-0">
+										<button class="btn btn-link">
+										9. Klik <b>Simpan Jawaban</b> untuk menyimpan data hasil praktikum
+										</button>
+									</h5>
+								</div>
+							</div>
+						</div>
 				</div>
 			<div class="hidden-md-down col-lg-1"></div>
 			</div>
 		</div>
 	</div>
-	<div class="container" style="width:100%; max-width:none; padding:0">
+	<div class="container" style="width:100%; max-width:none; padding:0 15px 40px 15px">
 		<div class="row" id="mainForm">
-			<div class="list-group col-lg-12" style="text-align: left;padding-right: 0"> 
-	        	<form id="form-jawaban" style="padding: 40px">
+			<div class="col-lg-1"></div>
+			<div class="list-group col-lg-10" style="text-align: left;padding-right: 0"> 
+	        	<form id="form-jawaban" style="padding: 40px; background-color:#333">
 		        	<div>
 		        	    <table class="table" style="margin: 10px 0">
 		        	    	<tbody>
@@ -135,30 +149,9 @@
 			        <a href="home.html"><button class="btn btn-danger" style="min-width: 240px">Kembali ke Beranda</button></a>
 			    </div>
 			</div>
-			<div class="hidden-md-down col-lg-1">
-
-			</div>
+			<div class="col-lg-1"></div>
         </div>
 	</div>
-    <div id="footer" class="footer">
-			<div class="row">
-				<div class="col-md-1">
-					
-				</div>
-				<div class="col-md-2" style="padding: 20px 40px">
-					<img src="Pictures/logo.png" height="auto" width="100%">
-				</div>
-				<div class="col-md-8" style="text-align:left;padding: 40px 40px 10px 40px">
-        		<h3>Pengembangan Laboratorium Virtual Fisika Berbasis Website untuk Pokok Bahasan Listrik Dinamis</h3>
-					<h4>&copy;Ni Ketut Rahayu@2018</h4>
-				</div>
-				<div class="col-md-1">
-					
-				</div>
-			</div>
-	</div>
-	<div id="modenya" style="display:none">volt</div>
-	<div id="is_started" style="display:none">no</div>
 	<script type="text/javascript" src="javascript/jquery-3.2.1.slim.min.js"></script>
 	<script type="text/javascript" src="javascript/resistor.js"></script>
 	<script type="text/javascript" src="javascript/breadboard.js"></script>
@@ -171,6 +164,16 @@
     <script type="text/javascript" src="javascript/scaling.js"></script>
 	<script type="text/javascript" src="javascript/timer.js"></script>
 	<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-	<script type="text/javascript" src="javascript/popper.min.js"></script>
+	<script type="text/javascript" src="javascript/popper.min.js"></script>	<script>
+			function openBox(){
+				var box = document.getElementById("prosedur-box");
+				if($(box).is(":hidden")){
+					box.classList.remove('hidden');
+				} else {
+					box.classList.add('hidden');
+				}
+	
+			}
+		</script>
 </body>
 </html>

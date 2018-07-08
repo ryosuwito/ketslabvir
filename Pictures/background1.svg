@@ -1,0 +1,72 @@
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="67.554mm" width="47.766mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169.24799 239.36414" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs4">
+  <clipPath id="clipPath4174" clipPathUnits="userSpaceOnUse">
+   <path id="path4176" d="m178.17 235.25h-97.728v-97.728-58.171-18.592-17h135.4v152.4 18.591 20.502h-37.669z"/>
+  </clipPath>
+ </defs>
+ <g id="layer1" transform="translate(177.08 -844.67)">
+  <g id="g5663">
+   <g id="g4154" transform="matrix(1.25 0 0 -1.25 -177.08 844.67)">
+    <path id="path4156" d="m0 0v-97.728l97.728 97.728h-97.728z" fill="#fff"/>
+   </g>
+   <g id="g4158" transform="matrix(1.25 0 0 -1.25 -177.08 1084)">
+    <path id="path4160" d="m0 0h135.4v152.4l-135.4-135.4v-17z" fill="#160e45"/>
+   </g>
+   <g id="g4162" transform="matrix(1.25 0 0 -1.25 -7.8324 844.67)">
+    <path id="path4164" d="m0 0h-37.67l-97.728-97.728v-58.171l135.4 135.4v20.5z" fill="#dc728d"/>
+   </g>
+   <g id="g4166" transform="matrix(1.25 0 0 -1.25 -177.08 1039.5)">
+    <path id="path4168" d="m0 0v-18.592l135.4 135.4v18.592l-135.4-135.4z" fill="#302977"/>
+   </g>
+   <g id="g4170" transform="matrix(1.25 0 0 -1.25 -277.64 1138.7)">
+    <g id="g4172" clip-path="url(#clipPath4174)">
+     <g id="g4178" transform="translate(264.2 43.757)">
+      <path id="path4180" d="m0 0c0-26.709-21.652-48.362-48.362-48.362-26.709 0-48.362 21.653-48.362 48.362s21.653 48.362 48.362 48.362c26.71 0 48.362-21.653 48.362-48.362" fill="#dc728d"/>
+     </g>
+     <g id="g4182" transform="translate(243.7 43.757)">
+      <path id="path4184" d="m0 0c0-15.388-12.474-27.862-27.862-27.862-15.387 0-27.862 12.474-27.862 27.862s12.475 27.862 27.862 27.862c15.388 0 27.862-12.474 27.862-27.862" fill="#160e45"/>
+     </g>
+     <g id="g4186" transform="translate(193.89 144)">
+      <path id="path4188" d="m0 0c0-16.529-13.399-29.928-29.928-29.928s-29.929 13.399-29.929 29.928 13.4 29.928 29.929 29.928 29.928-13.399 29.928-29.928" fill="#160e45"/>
+     </g>
+     <g id="g4190" transform="translate(180.99 144)">
+      <path id="path4192" d="m0 0c0-9.403-7.622-17.025-17.025-17.025-9.402 0-17.025 7.622-17.025 17.025s7.623 17.025 17.025 17.025c9.403 0 17.025-7.622 17.025-17.025" fill="#302977"/>
+     </g>
+     <g id="g4194" transform="translate(180.99 235.25)">
+      <path id="path4196" d="m0 0c0-9.403-7.622-17.025-17.025-17.025-9.402 0-17.025 7.622-17.025 17.025s7.623 17.025 17.025 17.025c9.403 0 17.025-7.622 17.025-17.025" fill="#302977"/>
+     </g>
+     <g id="g4198" transform="translate(163.96 144)">
+      <path id="path4200" d="m0 0h51.881v-51.881l-51.881 51.881z" fill="#a0c2d0"/>
+     </g>
+     <g id="g4202" transform="translate(215.84 144)">
+      <path id="path4204" d="m0 0h-51.881l51.881 52.155v-52.155z" fill="#160e45"/>
+     </g>
+     <g id="g4206" transform="translate(189.32 144.21)">
+      <path id="path4208" d="m0 0h26.522v26.522l-26.522-26.522z" fill="#e88ba0"/>
+     </g>
+     <g id="g4210" transform="translate(215.84 117.55)">
+      <path id="path4212" d="m0 0v26.662h-26.522l26.522-26.662z" fill="#160e45"/>
+     </g>
+     <g id="g4214" transform="translate(71.442 160.44)">
+      <path id="path4216" d="m0 0-35.711 35.711 35.711 35.71 35.711-35.71-35.711-35.711z" fill="#160e45"/>
+     </g>
+     <g id="g4218" transform="translate(113.33 203.44)">
+      <path id="path4220" d="m0 0-35.711 35.711 35.711 35.71 35.711-35.71-35.711-35.711z" fill="#e88ba0"/>
+     </g>
+     <g id="g4222" transform="translate(113.33 229.09)">
+      <path id="path4224" d="m0 0-10.062 10.062 10.062 10.063 10.062-10.063-10.062-10.062z" fill="#160e45"/>
+     </g>
+     <g id="g4226" transform="translate(113.33 170.08)">
+      <path id="path4228" d="m0 0-10.062 10.062 10.062 10.063 10.062-10.063-10.062-10.062z" fill="#302977"/>
+     </g>
+     <g fill="#fff">
+      <path id="path4240" d="m171 71.619h-49.671v7.73h49.671v-7.73z"/>
+      <path id="path4242" d="m178.71 177.78h11.195v-6.285h-11.195v6.285z"/>
+      <path id="path4244" d="m99.5 126h21.552v-6.044h-21.552v6.044z"/>
+      <path id="path4246" d="m130.68 126h3.184v-6.044h-3.184v6.044z"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
