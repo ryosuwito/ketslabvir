@@ -12,225 +12,224 @@
         @font-face { font-family: JuneBug; src: url('font/digital-italic.ttf'); } 
     </style>
 </head>
-<body>	
+<body  style="padding-top: 40px">	
+	<div style=" width: 100%; height: 100%; position: fixed; z-index: -1;
+	background-image: url('Pictures/background2.svg'); background-size: cover;">
+	</div>	
 	<div id="timer-box" class="hidden" style="position: fixed;z-index: 9000;top: 0px;right: 0px;padding: 15px;
 	background-color: rgb(18, 18, 17);border-radius: 80px;">
-		<h3 style="font-family: JuneBug;color: red;font-size: 200%;font-weight: bold;" id="time-counter"></h3></div>
-	
+		<h3 style="font-family: JuneBug;color: red;font-size: 200%;font-weight: bold;" id="time-counter"></h3></div>	
+	<nav class="navbar navbar-inverse navbar-fixed-top"
+		style="position: fixed; width: 100%; z-index: 2000; top:0">
+		<div class="container-fluid" style="display: flex; justify-content: center">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">TEORI DASAR</a></li>
+				<li><a href="#">PRETEST</a></li>			
+				<li class="dropdown dr-one">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						 <span class="glyphicon glyphicon-list"></span>SIMULASI<span class="caret"></span></a>
+					<ul class="dropdown-menu dr-menu-one dropdown-cart" role="menu" style="padding-bottom: 0">
+						<li><a href="#">Pengukuran Hambatan</a></li>		
+						<li><a href="#">Pengukuran Arus</a></li>
+						<li><a href="#">Pengukuran Tegangan</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>		
+	</nav>
 	<div class="header-box">
 		<div style="width:100%;height:auto; text-align: center; padding: 0; margin: 10px 0">
-			<h1 class="main-title" style="color: #444 !important">Laboratorium Virtual Fisika Listrik Dinamis</h1><br>
-			<h3 class="sub-title" style="color: #444 !important"><span>Sub Modul :</span><br>
-			Pengukuran Besaran Hambatan Resistor</h3>
+			<h1 class="main-title">Laboratorium Virtual Fisika Listrik Dinamis</h1><br>
+			<h3 class="sub-title"><span>Sub Modul :</span><br>
+			Pengukuran Arus Pada Rangkaian Listrik Arus Searah</h3>
 		</div>
 	</div>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid" style="display: flex; justify-content: center">
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">HOME</a></li>
-			<li><a href="#">TEORI DASAR</a></li>
-			<li><a href="#">PRETEST</a></li>
-			<li><a href="#">SIMULASI</a></li>
-		  </ul>
-		</div>
-	</nav>
 	<div class="container">
 		<div class="row" id="mainObjective">
 			<div class="hidden-md-down col-lg-1">
 
 			</div>
             <div class="list-group col-lg-10" style="text-align: center;padding-right: 0">
-            	<h5 class="list-group-item active">Prosedur Praktikum :</h5>
-
+            	<h3 style="cursor: pointer;" onclick="openBox()" class="list-group-item active">Prosedur Praktikum <sup>*(klik)</sup></h3>
+				<div id="prosedur-box" class="hidden">
             	<!-- MASUKAN PROSEDUR Praktikum DISINI -->
-				<div class="accordion" id="accordionExample">
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsez" aria-expanded="true" aria-controls="collapsez">
-				                1. Panduan Pemakaian Simulasi <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsez" aria-expanded="true" aria-controls="collapsez">
+									1. Panduan Pemakaian Simulasi <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapsez" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <img src="Pictures/mengukur-hambatan.gif" width="100%" height="auto">
-				                <p style="font-size:14px;margin: 20px 0 0 0"><b>NOTE :</b></p>
-				                <ul style="font-size:14px;text-align: left;">
-   				                    <li>Untuk memasang resistor pada breadboard perhatikan simbol tangan yang ada pada kursor di layar. Sesuaikan posisi kursor dengan lubang berwana hijau.</li>
-   				                    <li>Pasanglah resistor pada lubang breadboard yang masih kosong. <b>Jangan memasang resistor pada lubang yang sudah berwarna merah.</b></li>
-   				                    <li>Untuk melakukan pengukuran hambatan resistor, pasang kabel multimeter sesuai instruksi di video.</li>
+							<div id="collapsez" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<img src="Pictures/mengukur-hambatan.gif" width="100%" height="auto">
+									<p style="font-size:14px;margin: 20px 0 0 0"><b>NOTE :</b></p>
+									<ul style="font-size:14px;text-align: left;">
+										<li>Untuk memasang resistor pada breadboard perhatikan simbol tangan yang ada pada kursor di layar. Sesuaikan posisi kursor dengan lubang berwana hijau.</li>
+										<li>Pasanglah resistor pada lubang breadboard yang masih kosong. <b>Jangan memasang resistor pada lubang yang sudah berwarna merah.</b></li>
+										<li>Untuk melakukan pengukuran hambatan resistor, pasang kabel multimeter sesuai instruksi di video.</li>
 
-				                    <li>Untuk memutar knop multimeter ke kiri, tekan <b> CTRL + Klik </b> mouse</li>
-                                    <li>Untuk memutar knop multimeter ke kanan, cukup <b> Klik </b> mouse</li>
-				                </ul>
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-				                2. Klik tombol mulai untuk memulai praktikum. <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+										<li>Untuk memutar knop multimeter ke kiri, tekan <b> CTRL + Klik </b> mouse</li>
+										<li>Untuk memutar knop multimeter ke kanan, cukup <b> Klik </b> mouse</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+									2. Klik tombol mulai untuk memulai praktikum. <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapse2" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <p style="font-size:14px;margin: 20px 0 0 0">
-				            	Klik tombol <b>MULAI</b> yang ada di bagian bawah untuk menggunakan simulasi.
-				                <br>Penghitung waktu akan berjalan saat tombol 'MULAI' ditekan.</p>
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-				                3. Buatlah Rangkaian <b>Seri</b> seperti Gambar di bawah ini <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+							<div id="collapse2" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<p style="font-size:14px;margin: 20px 0 0 0">
+									Klik tombol <b>MULAI</b> yang ada di bagian bawah untuk menggunakan simulasi.
+									<br>Penghitung waktu akan berjalan saat tombol 'MULAI' ditekan.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+									3. Buatlah Rangkaian <b>Seri</b> seperti Gambar di bawah ini <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapse3" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <img src="Pictures/rangkaian-seri.png">
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-				                4. Ukurlah Nilai Resistor. <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+							<div id="collapse3" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<img src="Pictures/rangkaian-seri.png">
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+									4. Ukurlah Nilai Resistor. <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapse4" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <p style="font-size:14px;margin: 20px 0 0 0">
-				            	Ukurlah  nilai – nilai resistor R1, R2 dan R3 menggunakan ohmmeter, catat hasil pengukuran kamu di Form jawaban.</p>
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-				                5. Ukurlah Nilai Hambatan Total <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+							<div id="collapse4" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<p style="font-size:14px;margin: 20px 0 0 0">
+									Ukurlah  nilai – nilai resistor R1, R2 dan R3 menggunakan ohmmeter, catat hasil pengukuran kamu di Form jawaban.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+									5. Ukurlah Nilai Hambatan Total <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapse5" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <p style="font-size:14px;margin: 20px 0 0 0">
-				            	Ukurlah nilai  R<sub>total</sub> pada rangkaian seri menggunakan multimeter, catat data yang ditampilkan multimeter di Form jawaban</p>
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link">
-				                6. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
-				                </button>
-				            </h5>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-				                7. Buatlah Rangkaian <b>Paralel</b> seperti Gambar di bawah ini <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+							<div id="collapse5" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<p style="font-size:14px;margin: 20px 0 0 0">
+									Ukurlah nilai  R<sub>total</sub> pada rangkaian seri menggunakan multimeter, catat data yang ditampilkan multimeter di Form jawaban</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link">
+									6. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
+									</button>
+								</h5>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+									7. Buatlah Rangkaian <b>Paralel</b> seperti Gambar di bawah ini <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapse7" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <img src="Pictures/rangkaian-paralel.png">
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
-				                8. Ukurlah Nilai Resistor. <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+							<div id="collapse7" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<img src="Pictures/rangkaian-paralel.png">
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+									8. Ukurlah Nilai Resistor. <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapse8" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <p style="font-size:14px;margin: 20px 0 0 0">
-				            	Ukurlah  nilai – nilai resistor R1, R2 dan R3 menggunakan ohmmeter, catat hasil pengukuran kamu di Form jawaban.</p>
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
-				                9. Ukurlah Nilai Hambatan Total <span style="font-size: 85%">  &lt;&lt; klik</span>
-				                </button>
-				            </h5>
-				        </div>
+							<div id="collapse8" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<p style="font-size:14px;margin: 20px 0 0 0">
+									Ukurlah  nilai – nilai resistor R1, R2 dan R3 menggunakan ohmmeter, catat hasil pengukuran kamu di Form jawaban.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+									9. Ukurlah Nilai Hambatan Total <span style="font-size: 85%">  &lt;&lt; klik</span>
+									</button>
+								</h5>
+							</div>
 
-				        <div id="collapse9" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
-				            <div class="card-body" style="text-align: left;">
-				                <p style="font-size:14px;margin: 20px 0 0 0">
-				            	Ukurlah nilai  R<sub>total</sub> pada rangkaian paralel menggunakan multimeter, catat data yang ditampilkan multimeter di Form jawaban</p>
-				            </div>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link">
-				                10. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
-				                </button>
-				            </h5>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link">
-				                11. Ulangi prosedur percobaan 1 sampai 10 untuk percobaan kedua dan ketiga. 
-				                </button>
-				            </h5>
-				        </div>
-				    </div>
-				    <div class="card">
-				        <div class="card-header" id="headingz">
-				            <h5 class="mb-0">
-				                <button class="btn btn-link">
-				                12. Klik <b>Simpan Jawaban</b> untuk menyimpan data hasil praktikum
-				                </button>
-				            </h5>
-				        </div>
-				    </div>
-			    </div>
-            	<h5 class="list-group-item active">Waktu Praktikum :</h5>
-
-				<!-- MASUKAN BATAS WAKTU Praktikum DISINI -->
-				<div class="accordion" id="accordionExample2"></div>
-					<div class="card">
-						<div class="card-header" id="headingz">
-							<h5 class="mb-0">
-								<button class="btn btn-link">
-								Batas waktu yang diberikan untuk menyelesaikan Praktikum ini adalah : <strong id="batas-waktu" 
-								class="sub-title" style="font-size: 150%">30</strong> menit 
-								</button>
-							</h5>
+							<div id="collapse9" class="collapse" aria-labelledby="headingz" data-parent="#accordionExample">
+								<div class="card-body" style="text-align: left;">
+									<p style="font-size:14px;margin: 20px 0 0 0">
+									Ukurlah nilai  R<sub>total</sub> pada rangkaian paralel menggunakan multimeter, catat data yang ditampilkan multimeter di Form jawaban</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link">
+									10. Periksalah data yang telah kamu masukkan ke dalam form jawaban.
+									</button>
+								</h5>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link">
+									11. Ulangi prosedur percobaan 1 sampai 10 untuk percobaan kedua dan ketiga. 
+									</button>
+								</h5>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingz">
+								<h5 class="mb-0">
+									<button class="btn btn-link">
+									12. Klik <b>Simpan Jawaban</b> untuk menyimpan data hasil praktikum
+									</button>
+								</h5>
+							</div>
 						</div>
 					</div>
 				</div>
+            	<h3 class="list-group-item active">Waktu Praktikum :  <strong id="batas-waktu" 
+					class="sub-title">30</strong> menit</h3>
 			<div class="hidden-md-down col-lg-1"></div>
 			</div>
 		</div>
@@ -589,7 +588,7 @@
 
 				<div id="form-message-box" style="width: 100%; padding: 20px; text-align: center;">
 
-            	    <p style="text-align: center; color: #fff">Klik untuk mulai mengisi Blanko Percobaan</p>
+            	    <p style="text-align: center;">Klik untuk mulai mengisi Blanko Percobaan</p>
 					<button id="btn-start" class="btn btn-success" style="min-width: 140px">Mulai</button>
 				</div>
 			</div>
@@ -598,34 +597,38 @@
 			</div>
         </div> 
 	</div>    
-	<div class="container" style="max-width:none; padding:0;margin: 0 0 40px 0">
+	<div class="container" style="width:100%; max-width:none; padding:0 15px 40px 15px">
 		<div class="row" id="mainForm" style="margin:0">
-			<div class="list-group col-lg-12" style="text-align: left;padding-right: 0">
+			<div class="col-lg-1"></div>
+			<div class="list-group col-lg-10" style="background-color:#333333ff; 
+			display:flex; justify-content: center;height: auto;padding:0 20px">
 	        	<form action="/submit/hambatan/" id="form-jawaban" class="hidden" style="padding: 40px">
 		        	<div>
-		        	    <table class="table" style="margin: 10px 0">
-		        	    	<tbody>
-		        	    	   	<tr style="border: 1px solid #fff">
-			        	    		<th>Nama : 
-			        	    		</th>
-				        	    	<td>Ni Ketut Rahayu
-				        	    	</td>
-			        	    		<th style="border-left: 1px solid #fff">NIM : 
-			        	    		</th>
-				        	    	<td>12345680
-				        	    	</td>	
-			        	    		<th style="border-left: 1px solid #fff">Fakultas : 
-			        	    		</th>
-				        	    	<td>FKIP
-				        	    	</td>	
-			        	    		<th style="border-left: 1px solid #fff">Jurusan :
-			        	    		</th>
-				        	    	<td>Pendidikan Fisika
-				        	    	</td>	        	
-			        	    	</tr>
-			        	    </tbody>
-			        	</table>
-		        	    <table class="table" style="margin: 10px 0">
+						<table class="table" style="width:100%;margin:20px auto 0 auto">
+							<tbody>
+								<tr style="border: 1px solid #fff">
+									<th>Nama : 
+									</th>
+									<th style="border-left: 1px solid #fff">NIM : 
+									</th>
+									<th style="border-left: 1px solid #fff">Fakultas : 
+									</th>
+									<th style="border-left: 1px solid #fff">Jurusan :
+									</th>        	
+								</tr>
+								<tr style="border: 1px solid #fff">
+									<td>Ni Ketut Rahayu
+									</td>
+									<td style="border-left: 1px solid #fff">12345680
+									</td>	
+									<td style="border-left: 1px solid #fff">FKIP
+									</td>	
+									<td style="border-left: 1px solid #fff">Pendidikan Fisika
+									</td>	        	
+								</tr>
+							</tbody>
+						</table>
+		        	    <table class="table" style="width:100%;margin: auto">
 		        	    	<tbody>
 			        	    	<tr>
 			        	    		<td>Rangkaian Seri 
@@ -762,29 +765,13 @@
 	      				<button type="submit" class="btn btn-primary">Simpan Jawaban</button>
 	        	    </div>
 				</form> 
-                <div style="width: 100%;text-align: center;">
+			</div>
+			<div class="col-lg-1"></div>
+			<div style="width: 100%;margin-top:20px; text-align: center;">
 			        <a href="/"><button class="btn btn-danger" style="min-width: 240px">Kembali ke Beranda</button></a>
-			    </div>
 			</div>
         </div> 
 	</div>
-    <div id="footer" class="footer">
-        <div class="row" style="margin: 0;">
-        	<div class="col-md-1">
-        		
-        	</div>
-        	<div class="col-md-2" style="padding: 10px 40px">
-        		<img src="Pictures/logo.png" height="auto" width="80px">
-        	</div>
-        	<div class="col-md-8" style="text-align:left;padding: 10px 40px 10px 40px">
-        		<h5>Pengembangan Laboratorium Virtual Fisika Berbasis Website untuk Pokok Bahasan Listrik Dinamis</h5>
-        		<h6>&copy;Ni Ketut Rahayu@2018</h6>
-        	</div>
-        	<div class="col-md-1">
-        		
-        	</div>
-        </div>
-    </div>
 	<div id="modenya" style="display:none">ohm</div>
 	<div id="is_started" style="display:none">no</div>
 	<script type="text/javascript" src="javascript/jquery-3.2.1.slim.min.js"></script>
@@ -800,5 +787,16 @@
 	<script type="text/javascript" src="javascript/timer.js"></script>
 	<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
 	<script type="text/javascript" src="javascript/popper.min.js"></script>
+	<script>
+		function openBox(){
+			var box = document.getElementById("prosedur-box");
+			if($(box).is(":hidden")){
+				box.classList.remove('hidden');
+			} else {
+				box.classList.add('hidden');
+			}
+
+		}
+	</script>
 </body>
 </html>

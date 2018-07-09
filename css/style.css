@@ -25,17 +25,23 @@ tr{
 	flex-direction: row;
 }
 .navbar-inverse{
-	background: #465e10;
-	box-shadow: 0 5px 0 0 #094418
+	background: #ff9ee1;
+	box-shadow: 0 5px 0 0 #003128
 }
 .navbar .navbar-nav > li > a {
-	color: #fff;
+	color: #333;
 }
 .navbar-header > a {
 	color: #222;
 }
 .navbar-header > a:hover {
 	color: #444;
+}
+.navbar-nav .dropdown-menu {
+	position: absolute;
+	min-width: 220px;
+	padding-bottom: 10px !important;
+	z-index: 10000;
 }
 .card-header{
 	text-align: left;
@@ -73,8 +79,9 @@ h5 > .btn{
 	padding-top: 50px;
 	padding-bottom: 50px; 
 }
+
 a:hover{
-    color:#fbd9a3;
+	color:#032b57;
 }
 a > li > .badge{
 	color: #f80;

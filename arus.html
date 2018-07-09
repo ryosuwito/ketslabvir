@@ -21,15 +21,23 @@
 	background-color: rgb(18, 18, 17);border-radius: 80px;">
 		<h3 style="font-family: JuneBug;color: red;font-size: 200%;font-weight: bold;" id="time-counter"></h3></div>	
 	<nav class="navbar navbar-inverse navbar-fixed-top"
-	style="position: fixed; width: 100%; z-index: 2000; top:0">
+		style="position: fixed; width: 100%; z-index: 2000; top:0">
 		<div class="container-fluid" style="display: flex; justify-content: center">
 			<ul class="nav navbar-nav">
-			<li class="active"><a href="#">HOME</a></li>
-			<li><a href="#">TEORI DASAR</a></li>
-			<li><a href="#">PRETEST</a></li>
-			<li><a href="#">SIMULASI</a></li>
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">TEORI DASAR</a></li>
+				<li><a href="#">PRETEST</a></li>			
+				<li class="dropdown dr-one">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						 <span class="glyphicon glyphicon-list"></span>SIMULASI<span class="caret"></span></a>
+					<ul class="dropdown-menu dr-menu-one dropdown-cart" role="menu" style="padding-bottom: 0">
+						<li><a href="#">Pengukuran Hambatan</a></li>		
+						<li><a href="#">Pengukuran Arus</a></li>
+						<li><a href="#">Pengukuran Tegangan</a></li>
+					</ul>
+				</li>
 			</ul>
-		</div>
+		</div>		
 	</nav>
     <div class="header-box">
 		<div style="width:100%;height:auto; text-align: center; padding: 0; margin: 10px 0">
