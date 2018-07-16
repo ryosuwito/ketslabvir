@@ -89,6 +89,12 @@ a > li > .badge{
 ol > a{
 	color: #fff
 }
+li >.white{
+	color: #fff
+}
+li >.white:hover{
+	color: #aaa
+}
 ul > li{
 	padding-left: 15px;
 }
